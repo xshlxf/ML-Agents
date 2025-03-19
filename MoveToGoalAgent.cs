@@ -94,17 +94,6 @@ public class MoveToGoalAgent : Agent
             EndEpisode();
         }
 
-        // Penalización por moverse hacia la pared
-        // if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 1f))
-        // {
-        //     if (hit.collider.CompareTag("Wall"))
-        //     {
-        //         SetReward(-0.1f);
-        //         totalReward += -0.1f;
-        //         Debug.Log($"Hit wall. Attempt: {attempt}, Energy: {energy}, Total Reward: {totalReward}");
-        //     }
-        // }
-
         // Recompensa por acercarse a la caja
         if (!pickedUpBox)
         {
